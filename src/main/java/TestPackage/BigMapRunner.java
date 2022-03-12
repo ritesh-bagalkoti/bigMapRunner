@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 public class BigMapRunner {
     public static void main(String[] args) {
         System.out.println("Works");
-        LevelBigMap<String, Runner.Item> map = (new LevelBigMapBuilder()).setScratchDirectory(Paths.get("target")).setKeyType(String.class).setValueType(Runner.Item.class).build();
+        LevelBigMap<String, Item> map = (new LevelBigMapBuilder()).setScratchDirectory(Paths.get("target")).setKeyType(String.class).setValueType(Item.class).build();
     }
     static public class Item implements Serializable {
         Long a;
